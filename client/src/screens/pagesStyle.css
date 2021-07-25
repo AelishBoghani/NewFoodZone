@@ -23,3 +23,15 @@ input{
 td,th,tr{
     text-align: left;
 }
+.registerpage{
+    background-image: url('../backgrounds//bg1.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 84vh;
+}
+.loginpage{
+    background-image: url('../backgrounds//bg2.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 84vh;
+}

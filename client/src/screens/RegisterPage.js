@@ -5,10 +5,13 @@ import Loading from "../components/Loading";
 import Success from "../components/Success";
 import { registeruser } from "../redux/actions/userActions";
 import "./pagesStyle.css";
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 
 
 function RegisterPage() {
+  AOS.init()
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -33,7 +36,7 @@ function RegisterPage() {
   }
 
   return (
-    <div>
+    <div className="registerpage"  data-aos="zoom-in">
       <div className="row justify-content-center mt-5 m-2">
         <div className="col-md-5 mt-5 text-start shadow-lg p-3 mb-5 bg-white rounded">
           {loading && (<Loading/>)}

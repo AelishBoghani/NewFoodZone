@@ -3,9 +3,11 @@ import { useDispatch, useSelector } from "react-redux";
 import Error from "../components/Error";
 import Loading from "../components/Loading";
 import { loginUser} from "../redux/actions/userActions";
-
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 function LoginPage() {
+  AOS.init()
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const dispatch=useDispatch();
@@ -23,7 +25,7 @@ function LoginPage() {
       dispatch(loginUser(user))
   }
   return (
-    <div>
+    <div className="loginpage" data-aos="zoom-in">
       <div className="row justify-content-center mt-5 m-2">
         <div className="col-md-5 mt-5 text-start shadow-lg p-3 mb-5 bg-white rounded">
           {loading && (<Loading/>)}
