@@ -1,0 +1,25 @@
+input{
+    margin-top: 10px;
+    box-shadow: none;
+}
+.adminfunction{
+    padding: 10px;
+    background-color: rgb(1, 1, 77);
+    
+}
+
+.adminfunction li{
+    list-style-type: none;
+    display: inline;
+    color: white;
+}
+
+.adminfunction li a{
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+}
+
+td,th,tr{
+    text-align: left;
+}

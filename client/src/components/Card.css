@@ -1,0 +1,28 @@
+h1{
+    font-size: 20px;
+}
+.topimg{
+    height: 200px;
+    width: 200px;
+}
+.flex-container{
+    display: flex;
+}
+.btn{
+    background-color: red;
+    color: white;
+}
+
+.btn:hover{
+    background-color: black ;
+    color: white;
+}
+
+select{
+    box-shadow: none;
+    border-color: red;
+}
+.filter{
+    display: flex;
+}
+
